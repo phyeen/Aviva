@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <title>Glowing gradient</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.loader{
+    position: relative;
+    width: 300px;
+    height: 10px;
+    background: #fff;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+
+}
+.loader::before{
+    content: '';
+    position: absolute;
+}
+</style>
+<body>
+    <div class="loader"></div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <p id="condition"></p>
+
+<body>
+    <script>
+        var x="";
+        var x=  parseInt(prompt("Enter 1st Number:"));
+        var y="";
+        var y=  parseInt(prompt("Enter 2st Number:"));
+        if (x > y)
+        {
+            document.getElementById("condition").innerHTML=x + "the 1st no is greater" +y;
+        }
+    
+        else if(x<y){
+            document.getElementById("condition").innerHTML=y + "is greater than" +x; 
+        }
+        else {
+            document.getElementById("condition").innerHTML= y +"is equal to" +x;
+        }
+
+    </script>
+    </p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+      body{
+          counter-reset: s;
+      }
+      h2::before {
+      counter-increment: s;
+      content: " For the Section " counter(s) ": ";
+}
+  </style> 
+    
+  
+</head>
+<body>
+    <h2> HTML Tutorial</h2>
+    <h2> CSS Tutorial</h2>
+    <h2> JAVASCRIPT Tutorial</h2>
+    
+</body>
+</html>

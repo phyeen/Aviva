@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    color: white;
+}
+.nav{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    color: grey;
+    padding: 5px 7px;
+}
+.nav a{
+    color: rgb(253, 200, 154);
+    padding: 0px 7px;
+}
+/* .nav :-ms-fullscreen+{
+    padding: 0 1rem;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: black;
+} */
+.section{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.section .image{
+    flex: 1 1 60%
+}
+.section .image img{
+    width: 100%;
+    height: 100%;
+}
+.section .text{
+    flex: 1 1 40%;
+    padding-left: 5rem;
+}
+.text h2{
+    margin-top: 30px;
+    color: white;
+    font-weight: lighter;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+}
+
+
+

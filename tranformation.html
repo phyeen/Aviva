@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #mydiv{
+           transform: rotateZ(220deg);
+            width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+        }
+        div:hover {
+            width: 300px;
+        }
+        body
+    
+</head>
+<body>
+    <h1> The rotateZ() method</h1>
+    <div id="mydiv">this div element rotates 150 degrees</div>
+
+    <h1> The transition Properties specified one by one</h1>
+    <p> Hover over the div element </p>
+    <div>haha</div>
+    
+</body>
+</html>

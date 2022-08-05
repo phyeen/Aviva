@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tables</title>
+    <style>
+        #customers{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        #customer td, #customers th {
+            border: 10px solid black;
+            padding: 8px;
+        }
+        #customers tr:nth-child(even){background-color: aqua; color: aliceblue;}
+        #customers tr:nth-child(odd){background-color: blue; color: aliceblue;}
+         
+        #customers tr:hover{ background-color: #ddd;}
+
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: blueviolet;
+            color: white;
+
+
+        }
+        table, th
+        { background-color: black;}
+        
+        td{
+            text-align: center;
+            height: 50px;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <h2> The vertical-align Property</h2>
+    <p>This property sets the verrtical alignment (like top, bottom< or middle) of the content in th or td.</or></p>
+    <table id="customers">
+        <tr>
+            <th>COMPANY</th>
+            <th>CONTACT</th>
+            <th>COUNTRY</th>
+        </tr>
+        <tr>
+            <td>ALFRED FITTERKISTE</td>
+            <td>MARIA ANDRES</td>
+            <td>GERMANY</td>
+        </tr>
+        <tr>
+            <td>Bergunlunds snappbbkop</td>
+            <td>Christiana Berglund</td>
+            <td>Sweden</td>
+        </tr>
+           </table>
+    
+</body>
+</html>

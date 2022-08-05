@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    
+    <title>page layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            background-color: black;
+            padding-top: 5px;
+            height: 50px;
+            width: 1500px;
+            top: 0;
+            position: fixed;
+            
+        
+        }
+
+        .navigation{
+            font-size: 25px;
+            padding-right: 40px;
+            margin-left: 400px;
+            margin-top: -22px;
+        }
+        .navigation, li
+         
+        {
+            list-style: none;
+            display: inline;/*inline,block**/
+            padding-left: 10px;
+
+        }
+        .navigation, a{
+            text-decoration: none;
+            color: white;
+
+        }
+        .about {
+            width: 1365px;
+            height: 220px;
+            background-color: blueviolet;
+            position: relative;
+            top: -5px;    
+        }
+
+        .about_company {
+            position: absolute;
+            top: 10px;
+            width: 500px;
+            height: 200px;
+            left: 100px;
+            color: antiquewhite;
+            font-size: 30px;
+            padding-left: 10px;
+            background-color: blueviolet;
+            
+        }
+        .about_company p {
+            padding: 10px;
+        }
+        .company_logo {
+            position: absolute;
+            top: 10px;
+            width: 250px;
+            height: 200px;
+            left: 800px;
+            background-color: black;
+        }
+        .about_company button {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+         }
+         .my_services {
+             position: relative;
+             top: -5px;
+             width: 1365px;
+             height: 300px ;
+             background-color: violet;
+         }
+         .image1 {
+             position: absolute;
+             top: 50px;
+             width: 500px;
+             height: 200px;
+             left: 50px;
+             background-color: violet;
+         }
+         .image2 {
+             position: absolute;
+             top: 50px;
+             width: 500px;
+             height: 200px;
+             left: 500px;
+             background-color: violet;
+         }
+         .image3 {
+             position: absolute;
+             top: 50px;
+             width: 500px;
+             height: 200px;
+             left: 900px;
+             background-color: violet;
+         }
+         .footer { 
+            background-color: black;
+            padding-top: 5px;
+            height: 300px;
+            width: 1365px;
+            top: -5px;
+            position: relative;
+        
+        }
+        .div1 {
+            position:absolute;
+            top:-5px;
+            background-color: #000;
+            left: 10px;
+            width: 300px;
+        }
+        .div2 {
+            position:absolute;
+            top:-5px;
+            background-color: #000;
+            left: 500px;
+            width: 300px;
+            height: 20px;
+        }
+        .div3 {
+            position:absolute;
+            top: 5px;
+            background-color: #000;
+            left: 900px;
+            width: 400px;
+        }
+       #footer_list a {
+           text-decoration: none;
+           display: block;
+           font-size: 15px;
+           top: 25px;
+
+       }        
+        </style>
+        </head>
+        <body>
+    <div>
+        <img src="logo.jpg" width="50px" height="30px" style="padding-left: 100px;"/>
+    <ul class="navigation">
+        <li><a href ="#">HOME</a></li>
+        <li><a href ="#">ABOUT US</a></li>
+        <li><a href ="#">CONTACT US</a></li>
+        <li><a href ="#">SERVICE</a></li>
+   </ul>
+        </div>
+        <img src="blur.jpg" width="1366px" height="500px"/>
+
+        
+        <div class="about">
+
+        <div class="about_company">
+        <p> In APTECH traninig institute, you don't just get the skills
+             but we prepare you to have a career on IT.</p>
+
+        <center><button>Read More</button></center>
+
+        </div>
+
+        <div class="company_logo">
+            <center><img src="logo.jpg" width="350px" height="200px"/></center>
+        </div>
+
+        </div>
+            
+            <div class="my_services">
+            <center><h1 style="color:black; font-size: 30px;">Services</h1></center>
+          <div class="image1">
+                <img src="Underwater.jpg" width="350px" height="200px"/>
+                </div>
+
+            <div class="image2">
+                <img src="glass.jpg" width="300px" height="200px"/>
+    
+            </div>
+            <div class="image3">
+                <img src="you.jpg" width="300px" height="200px"/>
+    
+             </div> 
+             </div>
+        </body>
+        <div class="footer">
+                   <div class="div1">
+         <img src="logo.jpg" width="300px" height="200px top: -5px"/>
+             </div>
+             <div class="div2">
+                <h1 style="color: #fff; font-size: 20px; padding-top: 20px;"> Quick links</h1>
+                <br><br>
+                <ul id="footer_list">
+                    <li><a href ="#" style="padding-left: 50px;">Home</a></li>
+                    <li><a href ="#" style="padding-left: 50px;">About us</a></li>
+                    <li><a href ="#" style="padding-left: 50px;">Services</a></li>
+                    <li><a href ="#" style="padding-left: 50px;">Contact</a></li>
+                </ul>
+                    </div>
+                    <div class="div3">
+                        <h1 style="color: #fff; font-size: 20px; padding-top: 20px;"> Contact Information</h1>
+                        <br>
+                       
+                    </div>
+
+
+        </div>
+        
+    
+        </html>

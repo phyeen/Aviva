@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container{
+        display: flex;
+        /*flex-direction: column;*/
+        background-color: blueviolet;
+        align-content: space-around;
+        flex-wrap: wrap;
+    }
+    .flex-container> div{
+        background-color: aliceblue;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <h1> The flex-direction property.</h1>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>4</div>
+        <div>5</div>
+        <div style="flex: 0 0 200px;">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    
+</body>
+</html>

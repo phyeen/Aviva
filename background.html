@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #example{
+            border: 10px solid black;
+            padding: 35px;
+            background: url(yayy.jpg);
+            background-repeat: no-repeat;
+            background-origin: border-box;
+        }
+       #grad1{
+           height: 200px;
+           background-color: blueviolet;
+           background-image: repeating-radial-gradient(blue, blueviolet 10%, pink 20%);
+
+       } 
+       h1{
+           text-shadow: 2px 2px red;
+       }
+       p.test1 {
+          /* white-space: nowrap;*/
+           width: 200px;
+           border: 1px solid;
+           overflow: hidden;
+           /*text-overflow: clip;*/
+           word-wrap: break-word;
+       }
+       p.test2 {
+           white-space: nowrap;
+           width: 200px;
+           border: 1px solid;
+           overflow: hidden;
+           text-overflow: ellipsis;
+           
+       }
+       p.test3{
+        writing-mode: vertical-rl;
+    }
+    div {
+        width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+
+    }
+    #mydiv {
+        /*-ms-transform: rotate(20deg, 10deg);
+        transform: rotate(20deg, 10deg);*/
+        -ms-transform: skew(20deg, 10deg);
+        transform: skew(20deg, 10deg);
+    }
+    </style>
+</head>
+<body>
+    <h1>The background-origin property</h1>
+    <p>background-origin:border-box:</p>
+    <div id="example">
+        <h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+<p>Ut wisi enim ad minim veniam, quis nostrud exerci
+     tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+        
+
+    </div>
+    <h1> Reapeating Linear Gradient</h1>
+    <div id="grad1"></div>
+    <h2>text-overflow: clip:</h2>
+   <p class="test1">This is some long text that will not fit in the box </p>
+   <h2>text-overflow: ellipsis:</h2>
+   <p class="test2">This is some long text that will not fit in the box </p>
+    <p class="test3">some texts with writing-mode: vertical-rl</p>
+    <div>
+        This is a normal div element
+    </div>
+    <div id="mydiv">
+        This div element id rotated clockwise 20 degrees
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    p{
+        font-size: 150px;
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -255deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+         );
+         background-size: auto auto;
+         background-clip: border-box;
+         background-size: 200% auto;
+         color: #fff;
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+
+         -webkit-background-clip: text;
+         animation: textclip 2s linear infinite;
+
+    }
+    @keyframes textclip{
+        to{
+            background-position: 100% center;
+        }
+    }
+</style>
+<body>
+    <p>Fiyin</p>
+    
+</body>
+</html>
