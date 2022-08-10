@@ -17,6 +17,7 @@ html{
     height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     animation: slide 20s infinite;
     animation-iteration-count: infinite;
@@ -46,6 +47,7 @@ html{
     font-size: 50px ;
     font-family: Arial;
     text-transform: uppercase;
+    padding-bottom: 10px;
 }
 .logo::before{
     content: 'AVIVA';
@@ -55,7 +57,7 @@ html{
 }
 .logo{
     display: inline-flex;
-    filter: brightness(100%);
+    filter: brightness(110%);
     justify-content: center;
 }
 .navbar ul li{
@@ -94,15 +96,15 @@ position: relative;
 }
 @keyframes slide{
     0%{background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-        url(1.jpg), no-repeat;}
+        url(102.jpg), no-repeat;}
     25%{background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-        url(2.jpg), no-repeat;}
+        url(103.jpg), no-repeat;}
     50%{background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-        url(nav-image.jpg), no-repeat;}
+        url(104.jpg), no-repeat;}
     75%{background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-        url(nav-image1.jpg), no-repeat;}
+        url(105.jpg), no-repeat;}
     100%{background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
-        url(5.jpg), no-repeat;}
+        url(106.jpg), no-repeat;}
     
 }
 .content{
@@ -202,7 +204,7 @@ button:hover{
     transition: 0.7s;
 }
 .flash1:hover{
-    transform: scale(1.0);
+    transform: scale(1.1);
  
 }
 .flash2{
@@ -220,7 +222,7 @@ button:hover{
     transition: 0.7s;
 }
 .flash2:hover{
-    transform: scale(1.0);
+    transform: scale(1.1);
  
 }
 .flash3{
@@ -233,12 +235,12 @@ button:hover{
     text-align: left;
     font-size: 20px;
     line-height: 75px;
-    border-radius: 10px;
+    border-radius: 7px;
     box-shadow: 2px 2px 2px 1px black;
     transition: 0.7s;
 }
 .flash3:hover{
-    transform: scale(1.0);
+    transform: scale(1.1);
  }
  button{
     width: 80px;
@@ -256,20 +258,89 @@ button:hover{
 .about-us{
     display: flex;
     align-items: center;
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: #24262b;
     justify-content: space-around;
+    color: linen;
 }
 
 .about-image{
     left: 2px;
-    height: 400px;
+    height: 500px;
 }
 
 .aviva{
     font-size: 30px;
 
+}
+#about{
+    text-decoration: underline;
+}
+
+.services{
+display: flex;
+height: 1000px;
+width: 100%;
+padding-top: 15px;
+background: #24262b;
+justify-content: space-around;
+background-repeat: repeat;
+color: linen;
+}
+.ser-head{
+    
+}
+.ser-sec{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    color: linen;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 10px;
+    justify-self: unset;
+    
+}
+.ser1{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 31%;
+    text-align: left;
+    font-size: 20px;
+}
+.ser2{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 31%;
+    text-align: left;
+    font-size: 20px;
+}
+.ser3{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 31%;
+    text-align: left;
+    font-size: 20px;
+}
+.ser4{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    margin: 10px;
+    width: 31%;
+    text-align: left;
+    font-size: 20px;
 }
 .footer{
     background-color: #24262b;
