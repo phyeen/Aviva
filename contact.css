@@ -6,13 +6,10 @@
      font-family: 'Inter', sans-serif;
 
 }
-.full-page{
+.fullpage{
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(decor_items_1.jpg);
-
 }
 .navbar{
     padding: 10px 4%;
@@ -75,15 +72,16 @@ position: relative;
     width: 100%;
 }
 .container{
-    width: 90%;
+    width: 100%;
+    height: 100%;
     margin: auto;
     overflow: hidden;
     padding: 50px;
-    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(contact.jpg);
     color: linen;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url(decor_items_1.jpg);
+    background-repeat: no-repeat;
 }
 #contacts-sec{
-    
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -161,33 +159,38 @@ textarea::placeholder{
     cursor: pointer;
 }
 .footer{
-    background-color: transparent;
-    padding: 50px;
+    /*background-color: #24262b;*/
     display: block;
     color: linen;
-    align-items: center;
-    height: 300px;
+    justify-content: center;
+    text-align: center;
+    
 }
-.container{
+.fot-container{
     width: 100%;
     background-color: #24262b;
     margin: auto;
+    height: 220px;
 }
-.row{
+.fot-row{
     display: flex;
     flex-wrap: wrap;
+
 }
 ul{
     list-style: none;
 }
 .d2 p{
-    text-align: center;
-    color: rgba(255,255,255,0.336);
+    justify-content: center;
+    color: linen;
     padding-top: 35px;
+    width: 100%;
+    background-color: #24262b;
+    
 }
 .container{
     max-width: 100%;
-    background-color: transparent; 
+    background-color: #24262b; 
     margin: auto;
 }
 .row{
@@ -199,8 +202,11 @@ ul{
 }
 .footer-col{
     width: 20%;
-    padding: 0 12px;
+    padding: 20px 12px;
+    align-items: center;
+    
 }
+
 .footer-col h4{
     font-size: 20px;
     color: linen;
@@ -212,8 +218,9 @@ ul{
 .footer-col h4::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 80px;
     bottom: -10px;
+    background-color: linen;
     height: 2px;
     box-sizing: border-box;
     width: 60px;
@@ -251,10 +258,10 @@ ul{
     color: #24262b;
     background-color: #ffffff;
 }
-@media (max-width: 760px){
-    #contacts-sec .contact-form{
-        display: block;
-        width: 100%;
-        text-align: center;
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 30px;
     }
 }

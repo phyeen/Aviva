@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.image{
+    padding: 2% 4%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background-image: url(IMG-20220815-WA0016.jpg);
+    width: 1000px;
+    height: 300px;
+}
+@media (max-width: 1000px){
+    .container{
+        background-image: url(IMG-20220815-WA0018.jpg);
+    }
+}
+
+.navBar{
+    background-color: rgb(34, 34, 34);
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navList ul{
+     list-style: none;
+     display: flex;
+}
+.navList li{
+    padding: 0 20px;
+}
+.navList li a{
+    text-decoration: none;
+    color: white;
+}
+@media (max-width: 1000px){
+    .navBar{
+        background-color: chartreuse;
+    }
+}

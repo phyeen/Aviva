@@ -1,0 +1,222 @@
+body{
+    font-family: 'poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    padding-left: 15px;
+    /* padding: 5px 4%; */
+    display: flex;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24262b;
+    position: fixed;
+    z-index: 100;
+    padding-bottom: 5px; 
+}
+.logo{
+    width: 30px;
+    cursor: pointer;
+    /* padding-left: 5px; */
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px ;
+    font-family: Arial;
+    text-transform: uppercase;
+    /* padding-bottom: 10px; */
+    /* text-decoration: none; */
+}
+.logo::before{
+    content: 'AVIVA';
+    position: fixed;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+ .logo{ 
+    display: flex;
+    filter: brightness(180%);
+    /* justify-content: center; */
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar ul li::after{
+    /* content: ''; */
+    height: 2px;
+    width: 0;
+    background: linen;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.2s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.ser-hd{
+    background:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(warm-tones.jpg);
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0px 0px 200px;
+}
+h1{
+    font-size: 70px;
+    color: linen;
+    padding-top: 300px;
+    padding-left: 50px;
+}
+.desc{
+    font-size: 20px;
+    color: linen;
+    padding-left: 50px;
+}
+.services{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 620px;
+    padding: 30px;
+    justify-content: space-around;
+}
+.ser-bd{
+    width: 32%;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #24262b;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+h2{
+    padding: 30px;
+}
+.text{
+    padding-bottom: 30px;
+    font-size: 20px;
+
+}
+.footer{
+    /*background-color: #24262b;*/
+    display: block;
+    color: linen;
+    justify-content: center;
+    text-align: center;
+    
+}
+.fot-container{
+    width: 100%;
+    background-color: #24262b;
+    margin: auto;
+    height: 220px;
+    overflow: hidden;
+}
+.fot-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+ul{
+    list-style: none;
+}
+.d2 p{
+    text-align: center;
+    color: linen;
+    padding-top: 35px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #24262b;
+    
+}
+.container{
+    max-width: 100%;
+    background-color: #24262b; 
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 20%;
+    padding: 20px 12px;
+   
+    
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: linen;
+    text-transform: capitalize;
+    /* margin-left: 60px; */
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 85px;
+    bottom: -10px;
+    background-color: linen;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: linen;
+    text-decoration: none;
+    font-weight: 300;
+    color: linen;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: linen;
+    padding-left: 10px;
+}
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}

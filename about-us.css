@@ -1,0 +1,309 @@
+body{
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.banner .slider{
+    top: 5px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: slide 20s infinite;
+    animation-iteration-count: infinite;
+
+    
+}
+.navbar{
+    padding: 10px 4%;
+    display: flex;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24262b;
+    position: fixed;
+    z-index: 100;
+    padding-bottom: 10px;
+}
+.logo{
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 12px;
+    padding-left: 5px;
+    color: #ffffff;
+    background: #24262b;
+    font-weight: bold;
+    font-size: 50px ;
+    font-family: Arial;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+.logo::before{
+    content: 'AVIVA';
+    position: fixed;
+    mix-blend-mode: difference;
+    filter: blur(3px);
+}
+.logo{
+    display: inline-flex;
+    filter: brightness(100%);
+    justify-content: center;
+}
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: linen;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    transition: 0.2s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.about-hd{
+background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(IMG-20220815-WA0023.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 400px;
+width: 100%;
+position: relative;
+}
+
+.team{
+    border: 1px solid #24262b;
+    width: 500px;
+    /* font-size: 50px; */
+    position: relative;
+    margin-left: 420px;
+    padding: 40px;
+    height: 400px;
+    color: linen;
+    background-color: #24262b;
+    box-shadow: 5px #ffffff;
+    border-radius: 10px;
+}
+
+h2{
+    font-size: 45px;
+    color: linen;
+    text-align: center;
+    padding-top: 70px;
+    
+}
+h4{
+    font-size: 35px;
+    color: linen;
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.vision{
+    margin-top: 15px;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(page.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 400px;  
+    padding: 20px;
+}
+.vis{
+    font-size: 30px;
+    color: linen; 
+}
+.mission{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  top: -15px;
+  padding: 20px;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(page.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;  
+} 
+.miss{
+    font-size: 30px;
+    color: linen;
+}
+h1{
+    text-align: center;
+    color: #24262b;
+    font-size: 60px;
+}
+.persons{
+    display: flex;
+    background-color: linen;
+}
+.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    height: 250px;
+}	
+
+.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.line3{
+width: 80px;
+height: 4px;
+background-color: linen;
+margin-bottom: 12px;
+margin-left: 70px;
+align-items: center;
+}
+
+.value-images{
+    top: 300px;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(people.jpg);
+    width: 50%;
+    height: 500px;
+}
+.aviva{
+    text-align: center;
+    font-size: 30px;
+    color: linen;
+}
+.footer{
+    /*background-color: #24262b;*/
+    display: block;
+    color: linen;
+    justify-content: center;
+    text-align: center;
+    
+}
+.fot-container{
+    width: 100%;
+    background-color: #24262b;
+    margin: auto;
+    height: 220px;
+    overflow: hidden;
+}
+.fot-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+ul{
+    list-style: none;
+}
+.d2 p{
+    text-align: center;
+    color: linen;
+    padding-top: 35px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #24262b;
+    
+}
+.container{
+    max-width: 100%;
+    background-color: #24262b; 
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 20%;
+    padding: 20px 12px;   
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: linen;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 85px;
+    bottom: -10px;
+    background-color: linen;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a i{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: linen;
+    text-decoration: none;
+    font-weight: 300;
+    color: linen;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a i:hover{
+    color: linen;
+    padding-left: 10px;
+}
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-decoration: none;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+.fot-list a i{
+    color: white;
+}
+

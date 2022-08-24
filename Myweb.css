@@ -1,5 +1,4 @@
 body{
-    line-height: 1.5;
     font-family: 'poppins', sans-serif;
 }
 *{
@@ -11,21 +10,10 @@ body{
 html{
     scroll-behavior: smooth;
 }
-.banner .slider{
-    top: 5px;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    animation: slide 20s infinite;
-    animation-iteration-count: infinite;
 
-    
-}
 .navbar{
-    padding: 10px 4%;
+    padding-left: 15px;
+    /* padding: 5px 4%; */
     display: flex;
     left: 0;
     right: 0;
@@ -34,20 +22,19 @@ html{
     background-color: #24262b;
     position: fixed;
     z-index: 100;
+    padding-bottom: 5px; 
 }
 .logo{
-    width: 60px;
-    height: 50px;
+    width: 30px;
     cursor: pointer;
-    border-radius: 12px;
-    padding-left: 5px;
+    /* padding-left: 5px; */
     color: #ffffff;
-    background: #24262b;
     font-weight: bold;
     font-size: 50px ;
     font-family: Arial;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
+    /* text-decoration: none; */
 }
 .logo::before{
     content: 'AVIVA';
@@ -55,10 +42,10 @@ html{
     mix-blend-mode: difference;
     filter: blur(3px);
 }
-.logo{
-    display: inline-flex;
-    filter: brightness(110%);
-    justify-content: center;
+ .logo{ 
+    display: flex;
+    filter: brightness(180%);
+    /* justify-content: center; */
 }
 .navbar ul li{
 list-style: none;
@@ -73,7 +60,7 @@ position: relative;
     font-size: 15px;
 }
 .navbar ul li::after{
-    content: '';
+    /* content: ''; */
     height: 2px;
     width: 0;
     background: linen;
@@ -88,8 +75,8 @@ position: relative;
 .slider{
     position: relative;
     width: 100%;
-    height: 450px;
-    animation: slide 20s infinite;
+    height: 650px;
+    animation: slide 20s ease infinite;
     animation-iteration-count: infinite;
    
 
@@ -114,11 +101,12 @@ position: relative;
     transform: translateY(-50%);
     text-align: center;
     color: linen;
+    
 
 }
 .content h1{
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .content p{
     margin: 20px auto;
@@ -167,37 +155,41 @@ button:hover{
     display: flex;
     background-color: linen;
     justify-content: space-between;
-
+    width: 100%;
 }
+
 .flash-images{
     display: flex;
     width: 100%;
-    flex-wrap: wrap;
     color: linen;
     font-size: 20px;
     padding-left: 15px;
     padding-right: 10px;
-    justify-self: unset;
+    align-items: center;
     
 }
 #line1{
-    width: 80px;
-    height: 3px;
+    width: 50px;
+    height: 4px;
     background-color: linen;
-    border-radius: 10px;
+    margin-top: 0px;
+    margin-left: 90px;
+    border-radius: 5px;
     align-items: center;
-
     
+}
+h5{
+    text-align: center;
 }
 .flash1{
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(flash1.jpg);
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    width: 31%;
+    width: 32%;
     margin: 10px;
     text-align: left;
-    line-height: 75px;
+    line-height: 70px; 
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px black;
@@ -212,10 +204,10 @@ button:hover{
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    width: 31%;
+    width: 32%;
     margin: 10px;
     text-align: left;
-    line-height: 75px;
+    line-height: 70px;
     font-size: 20px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px black;
@@ -231,16 +223,22 @@ button:hover{
     background-position: right;
     background-repeat: no-repeat;
     margin: 10px;
-    width: 31%;
+    width: 32%;
     text-align: left;
     font-size: 20px;
-    line-height: 75px;
+    line-height: 70px;
     border-radius: 7px;
     box-shadow: 2px 2px 2px 1px black;
     transition: 0.7s;
 }
 .flash3:hover{
     transform: scale(1.1);
+ }
+ .flash-des{
+    margin-left: 65px;
+    align-items: center;
+    margin-bottom: 5px;
+    
  }
  button{
     width: 80px;
@@ -263,6 +261,7 @@ button:hover{
     background-color: #24262b;
     justify-content: space-around;
     color: linen;
+    font-size: 40px;
 }
 
 .about-image{
@@ -272,97 +271,129 @@ button:hover{
 
 .aviva{
     font-size: 30px;
-
-}
-#about{
-    text-decoration: underline;
-}
-
-.services{
-display: flex;
-height: 1000px;
-width: 100%;
-padding-top: 15px;
-background: #24262b;
-justify-content: space-around;
-background-repeat: repeat;
-color: linen;
-}
-.ser-sec{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    color: linen;
-    font-size: 20px;
-    padding-left: 15px;
-    padding-right: 10px;
-    justify-self: unset;
     
 }
+#about{
+    text-decoration: none;
+    color: linen;
+}
+.services{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(pexels-vecislavas-popa-1571460.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    /* max-width: fit-content; */
+    display: flexbox;
+
+}
+h6{
+    color: linen;
+    font-size: 30px;
+    text-align: center;
+}
+.circle{
+    border: 2px solid linen;
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    align-self: center;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    padding: 25px;
+    color: linen;
+    
+}
+.ser-sec{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 60px;
+    color: linen;
+    font-size: 20px;
+    padding: 37px;
+}
+/*.services{   
+top: 5px;
+display: flex;
+height: 100%;
+width: 100%;
+justify-content: space-around;
+background-repeat: no-repeat;
+color: linen;
+}
+.ser-sec{   
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(pexels-vecislavas-popa-1571460.jpg);
+    background-size: cover;
+    width: 100%;
+}*/
 .ser1{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat;
-    margin: 10px;
-    width: 31%;
-    text-align: left;
+    width: 25%;
     font-size: 20px;
 }
 .ser2{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat;
-    margin: 10px;
-    width: 31%;
-    text-align: left;
+    width: 25%;
     font-size: 20px;
 }
 .ser3{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat;
-    margin: 10px;
-    width: 31%;
-    text-align: left;
+    width: 25%;
     font-size: 20px;
 }
 .ser4{
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),;
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat;
-    margin: 10px;
-    width: 31%;
-    text-align: left;
+    width: 25%;
     font-size: 20px;
 }
+.dash{
+    width: 50px;
+    height: 4px;
+    background-color: linen;
+    margin-top: 30px;
+    margin-left: 130px;
+    border-radius: 5px;
+    align-self: center;
+
+}
 .footer{
-    background-color: #24262b;
-    padding: 50px;
+    /*background-color: #24262b;*/
     display: block;
     color: linen;
-    align-items: center;
-    height: 300px;
+    justify-content: center;
+    text-align: center;
+    
 }
-.container{
+.fot-container{
     width: 100%;
     background-color: #24262b;
     margin: auto;
+    height: 220px;
+    overflow: hidden;
 }
-.row{
+.fot-row{
     display: flex;
     flex-wrap: wrap;
+    
 }
 ul{
     list-style: none;
 }
 .d2 p{
     text-align: center;
-    color: rgba(255,255,255,0.336);
+    color: linen;
     padding-top: 35px;
+    padding-left: 20px;
+    width: 100%;
+    background-color: #24262b;
+    
 }
 .container{
     max-width: 100%;
@@ -378,21 +409,24 @@ ul{
 }
 .footer-col{
     width: 20%;
-    padding: 0 12px;
+    padding: 20px 12px;
+   
+    
 }
 
 .footer-col h4{
     font-size: 20px;
     color: linen;
     text-transform: capitalize;
+    /* margin-left: 60px; */
     margin-bottom: 30px;
-    position: relative;
     font-weight: 600;
+    position: relative;
 }
 .footer-col h4::before {
     content: '';
     position: absolute;
-    left: 0;
+    left: 85px;
     bottom: -10px;
     background-color: linen;
     height: 2px;
@@ -422,7 +456,7 @@ ul{
     width: 40px;
     background-color: rgba(255,255,255,0.2);
     margin:0 10px 10px 0;
-    text-align: center;
+    text-decoration: none;
     line-height: 40px;
     border-radius: 50%;
     color: #ffffff;
@@ -432,10 +466,18 @@ ul{
     color: #24262b;
     background-color: #ffffff;
 }
-@media(max-width: 767px){
+@media (max-width: 767px){
+    .logo .navbar{
+        display: flex;
+    }
+    .services{
+        width: 500px;
+        display: flex;
+    }
     .footer-col{
         width: 50%;
         padding: 0 15px;
         margin-bottom: 30px;
+        display: inline-block;
     }
 }
